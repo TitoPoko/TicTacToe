@@ -8,12 +8,17 @@ body {
 }
 
 .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.row {
     display: flex;
 }
 
 #image-box {
-    width: 75px;
-    height: 75px;
+    width: 150px;
+    height: 150px;
     border: 3px solid #000;
     cursor: pointer;
     border-radius: 10px;
@@ -29,5 +34,6 @@ body {
 
 #box-image:hover {
     transform: scale(1.1);
-    cursor: pointer; 
+    cursor: pointer;
+    border: 3px solid #111;
 }
